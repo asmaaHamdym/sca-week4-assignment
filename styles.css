@@ -1,10 +1,17 @@
+:root {
+  --main-red: #df2e38;
+  --mid-green: #ddf7e3;
+  --light-green: #c7e8ca;
+  --dark-green: #5d9c59;
+}
 * {
   font-family: Helvetica, sans-serif serif;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: var(--dark-green);
+  text-shadow: 0px 0px 2px rgb(17, 15, 15); /* Adjust color and blur as needed */
 }
 p {
   text-align: center;
@@ -16,12 +23,14 @@ p {
 }
 .nav-item {
   margin: auto 50px;
-  font-weight: 800;
+  font-weight: 500;
+  font-size: 2em;
 }
 .name {
+  color: var(--main-red);
   margin-right: auto;
   margin-left: -50px;
-  font-size: 40px;
+  font-size: 3em;
   font-family: "Sedan", serif;
   font-weight: 400;
   font-style: italic;
@@ -29,6 +38,7 @@ p {
 
 .contact {
   margin-left: auto;
+  margin-right: 0;
 }
 .logo > img {
   width: 60px;
@@ -43,7 +53,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: aliceblue;
+  color: var(--light-green);
   font-weight: 500;
 }
 .title {
@@ -64,13 +74,13 @@ button {
   margin: 15px;
   border-radius: 30px;
   border: none;
-  background: #ad343e;
+  background: var(--main-red);
   font-size: 1.2em;
-  color: white;
+  color: var(--light-green);
 }
 #menu button {
-  background: #fff;
-  border: 1px solid black;
+  background: aliceblue;
+  border: 1px solid var(--dark-green);
   color: black;
 }
 call-to-action {
@@ -79,10 +89,11 @@ call-to-action {
 .dropdown {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: var(--light-green);
   min-width: 140px;
   z-index: 1;
-  margin-left: 45px;
+  margin-left: 30px;
+  margin-top: 12px;
 }
 
 .dropdown ul {
@@ -103,6 +114,7 @@ call-to-action {
     display: block;
     padding: 10px;
     text-decoration: none;
+    font-size: 0.7em;
   }
 }
 
@@ -121,28 +133,35 @@ call-to-action {
   display: flex;
   justify-content: center;
   align-items: center;
+  h1 {
+    /* font-stretch: extra-expanded; */
+    padding: 30px;
+    font-size: 40px;
+  }
 }
 .menu-cards {
+  margin: 50px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  width: 100%;
 }
 .menu-card {
   width: 20em;
   height: 20em;
-  padding: 30px 20px;
-  border: 1px solid rgb(160, 159, 159);
+  padding: 70px 40px;
+  border: 1px solid var(--dark-green);
   border-radius: 12px;
-  margin: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-}
-.menu-card {
+
   a {
-    color: #ad343e;
+    color: var(--main-red);
     font-weight: bold;
+    margin: 10px;
+    text-shadow: none;
   }
   img {
     width: 80px;
@@ -151,18 +170,80 @@ call-to-action {
     background: rgb(166 159, 159);
     margin-top: 15px;
   }
+  p {
+    font-size: 1.5em;
+    line-height: 1.5;
+    margin: 20px;
+    color: rgba(70, 68, 68, 0.8);
+  }
+
+  @media screen and (max-width: 675px) {
+    .menu-card img {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background: rgb(166 159, 159);
+      margin-top: 15px;
+    }
+    .menu-card {
+      font-size: small;
+      margin: 3px;
+    }
+  }
 }
 
-@media screen and (max-width: 675px) {
-  .menu-card img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background: rgb(166 159, 159);
-    margin-top: 15px;
+.footer {
+  background: var(--dark-green);
+  padding: 30px 0px;
+  font-family: "Play", sans-serif;
+  text-align: center;
+}
+.footer img {
+  width: 40px;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  font-size: em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: rgb(20, 20, 20);
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #fff;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
+@media (max-width: 720px) {
+  .footer {
+    text-align: left;
+    padding: 5%;
   }
-  .menu-card {
-    font-size: small;
-    margin: 3px;
+  .footer .row ul li {
+    display: block;
+    margin: 10px 0px;
+    text-align: left;
+  }
+  .footer .row a i {
+    margin: 0% 3%;
   }
 }
