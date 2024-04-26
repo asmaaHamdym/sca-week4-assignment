@@ -5,24 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./images/restaurant2.png">
-
-    <title>Bistro Bliss</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Rubik+Doodle+Shadow&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&family=Quicksand:wght@300..700&family=Rubik+Doodle+Shadow&family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <title>Nile Delights</title>
   </head>
   <body>
     <header>
       <nav>
         <ul class="nav-container">
-          <li class="nav-item logo"><img src="./images/hot-dog.png" alt=""> </li>
-          <li class="nav-item name">Bistro Bliss</li>
+          <li class="nav-item logo"><img src="./images/pharaoh.png" alt=""> </li>
+          <li class="nav-item name">Nile Delights</li>
 
           <li class="nav-item home"><a href="index.html">Home</a></li>
           <li class="nav-item about"><a href="about.html">About</a></li>
-          <li class="nav-item menu"><a href="menu.html">Menu</a></li>
+          <li class="nav-item menu">
+            <div class="dropdown">
+                <ul>
+                    <li><a class="menu-item" href="#">Breakfast</a></li>
+                    <li><a class="menu-item" href="#">Main Dishes</a></li>
+                    <li><a class="menu-item" href="#">Drinks</a></li>
+                    <li><a class="menu-item" href="#">Desserts</a></li>
+
+                </ul>
+            </div>
+            <a href="menu.html">Menu</a></li>
           <li class="nav-item contact"><a href="contact.html">Contact</a></li>
           
       </nav>
     </header>
-    <main></main>
+    <main>
+        <section class="hero">
+            <h1 class="title">
+                Best food for your taste🫘
+            </h1>
+            <p class="slogan">
+                Savor Egypt's Rich Flavors, Where Tradition Meets Taste! <br>
+                Embark on a Culinary Journey Along the Banks of the Nile!
+            </p>
+            <section class="call-to-action">
+                <button class="book">Book a table</button>
+                <a href="menu.html" id="menu">
+                    <button id="menu">Explore Menu</button>
+                </a>
+            </section>
+        </section>
+    </main>
     <hr />
     <footer>
       <p>
