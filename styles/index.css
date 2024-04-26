@@ -10,8 +10,8 @@ body {
 }
 
 * {
-  font-family: Helvetica, sans-serif serif;
-  white-space: wrap;
+  font-family: 'Helvetica', 'sans-serif' 'serif';
+
 }
 
 a {
@@ -56,19 +56,14 @@ a {
 }
 
 .hero {
-  height: 800px;
+  height: 700px;
   width: 100%;
   background-image: url(../images/brooke-lark-08bOYnH_r_E-unsplash.jpg);
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
   font-weight: 500;
-
-  p {
-    margin: 40px
-  }
-
 }
 
 .title {
@@ -78,10 +73,14 @@ a {
   font-weight: bold;
   font-style: normal;
   font-size: 100px;
-  margin-top: -40px;
+  margin-top: 20px;
   /* -webkit-text-stroke: 1px black; */
 }
 
+.call-to-action {
+  margin-bottom: 40px;
+
+}
 
 
 button {
