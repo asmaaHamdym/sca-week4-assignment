@@ -29,7 +29,6 @@ a {
 }
 
 .nav-item {
-  flex: 1;
   margin: auto 50px;
   font-weight: 500;
   font-size: 2em;
@@ -38,23 +37,22 @@ a {
 .name {
   color: #242328;
   margin-right: auto;
-  margin-left: -100px;
+  margin-left: -50px;
   font-size: 3em;
   font-family: "Sedan", serif;
-  font-weight: 650;
+  font-weight: 550;
   font-style: italic;
 }
 
 .contact {
   margin-left: auto;
-
+  /* margin-right: 0; */
 }
 
 .logo>img {
   width: 60px;
   height: 60px;
   margin-top: 12px;
-  margin-right: -20px;
 }
 
 .hero {
@@ -162,7 +160,6 @@ call-to-action {
 }
 
 .menu-cards {
-  flex: 1;
   margin: 10px auto;
   display: flex;
   justify-content: space-around;
