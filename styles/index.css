@@ -60,7 +60,7 @@ p {
 .hero {
   height: 800px;
   width: 100%;
-  background-image: url(./images/spaghetti-1932466_1280.jpg);
+  background-image: url(../images/spaghetti-1932466_1280.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -164,7 +164,6 @@ call-to-action {
   justify-content: space-around;
   align-items: center;
   width: auto;
-  padding: 0 100px;
 }
 
 .menu-card {
@@ -177,7 +176,7 @@ call-to-action {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 30px;
+  margin: 15px;
 
   img {
     width: 6em;
