@@ -11,18 +11,16 @@ body {
 
 * {
   font-family: Helvetica, sans-serif serif;
+  white-space: wrap;
 }
 
 a {
   text-decoration: none;
-  color: var(--dark-green);
+  color: var(--main-red);
   text-shadow: 0px 0px 2px rgb(17, 15, 15);
-  /* Adjust color and blur as needed */
+
 }
 
-p {
-  text-align: center;
-}
 
 .nav-container {
   display: flex;
@@ -31,13 +29,14 @@ p {
 }
 
 .nav-item {
+  flex: 1;
   margin: auto 50px;
   font-weight: 500;
   font-size: 2em;
 }
 
 .name {
-  color: var(--main-red);
+  color: #242328;
   margin-right: auto;
   margin-left: -50px;
   font-size: 3em;
@@ -60,33 +59,36 @@ p {
 .hero {
   height: 800px;
   width: 100%;
-  background-image: url(../images/spaghetti-1932466_1280.jpg);
+  background-image: url(../images/brooke-lark-08bOYnH_r_E-unsplash.jpg);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: var(--light-green);
   font-weight: 500;
+
+  p {
+    margin: 40px
+  }
+
 }
 
 .title {
+  color: var(--dark-green);
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
   font-size: 100px;
+  margin-top: -40px;
   /* -webkit-text-stroke: 1px black; */
 }
 
-.slogan {
-  font-size: 24px;
-  font-weight: bold;
-}
+
 
 button {
   width: 12em;
   height: 3em;
-  margin: 15px;
+  margin: 20px;
   border-radius: 30px;
   border: none;
   background: var(--main-red);
@@ -159,6 +161,7 @@ call-to-action {
 }
 
 .menu-cards {
+  flex: 1;
   margin: 10px auto;
   display: flex;
   justify-content: space-around;
@@ -202,7 +205,7 @@ call-to-action {
 .footer {
   background: var(--dark-green);
   padding: 30px 0px;
-  width: 100vw;
+  width: 100%;
   font-family: "Play", sans-serif;
   text-align: center;
 }

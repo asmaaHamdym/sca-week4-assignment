@@ -2,11 +2,6 @@
     flex-wrap: wrap;
 }
 
-.menu-card {
+.breakfast-card {
 
-    img {
-        width: 100%;
-        background: none;
-        border-radius: 0;
-    }
-}
+    flex: 1;
