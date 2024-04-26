@@ -1,0 +1,12 @@
+.menu-cards {
+    flex-wrap: wrap;
+}
+
+.menu-card {
+
+    img {
+        width: 100%;
+        background: none;
+        border-radius: 0;
+    }
+}

@@ -4,9 +4,11 @@
   --light-green: #c7e8ca;
   --dark-green: #5d9c59;
 }
+
 body {
   width: 100%vh;
 }
+
 * {
   font-family: Helvetica, sans-serif serif;
 }
@@ -14,21 +16,26 @@ body {
 a {
   text-decoration: none;
   color: var(--dark-green);
-  text-shadow: 0px 0px 2px rgb(17, 15, 15); /* Adjust color and blur as needed */
+  text-shadow: 0px 0px 2px rgb(17, 15, 15);
+  /* Adjust color and blur as needed */
 }
+
 p {
   text-align: center;
 }
+
 .nav-container {
   display: flex;
   list-style: none;
   justify-content: flex-end;
 }
+
 .nav-item {
   margin: auto 50px;
   font-weight: 500;
   font-size: 2em;
 }
+
 .name {
   color: var(--main-red);
   margin-right: auto;
@@ -43,11 +50,13 @@ p {
   margin-left: auto;
   /* margin-right: 0; */
 }
-.logo > img {
+
+.logo>img {
   width: 60px;
   height: 60px;
   margin-top: 12px;
 }
+
 .hero {
   height: 800px;
   width: 100%;
@@ -59,6 +68,7 @@ p {
   color: var(--light-green);
   font-weight: 500;
 }
+
 .title {
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
@@ -67,10 +77,12 @@ p {
   font-size: 100px;
   /* -webkit-text-stroke: 1px black; */
 }
+
 .slogan {
   font-size: 24px;
   font-weight: bold;
 }
+
 button {
   width: 12em;
   height: 3em;
@@ -81,14 +93,17 @@ button {
   font-size: 1.2em;
   color: var(--light-green);
 }
+
 #menu button {
   background: aliceblue;
   border: 1px solid var(--dark-green);
   color: black;
 }
+
 call-to-action {
   margin-top: 100px;
 }
+
 .dropdown {
   display: none;
   position: absolute;
@@ -108,6 +123,7 @@ call-to-action {
 .dropdown ul li {
   border: 1px transparent;
   background: white;
+
   a {
     display: block;
     padding: 10px;
@@ -127,18 +143,21 @@ call-to-action {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(23, 64, 10, 0.35) 0px -2px 6px 0px inset;
 }
+
 .menu-section {
   font-size: 30px;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+
   h1 {
     /* font-stretch: extra-expanded; */
     padding: 20px;
     font-size: 60px;
   }
 }
+
 .menu-cards {
   margin: 10px auto;
   display: flex;
@@ -147,6 +166,7 @@ call-to-action {
   width: auto;
   padding: 0 100px;
 }
+
 .menu-card {
   width: 20em;
   height: auto;
@@ -159,14 +179,6 @@ call-to-action {
   align-items: center;
   margin-bottom: 30px;
 
-  /* a {
-
-    color: var(--main-red);
-    font-weight: bold;
-    margin: 10px;
-    text-shadow: none;
-    
-  } */
   img {
     width: 6em;
     height: 6em;
@@ -174,12 +186,14 @@ call-to-action {
     background: var(--light-green);
     margin-top: 15px;
   }
+
   p {
     font-size: 1.5em;
     line-height: 1.5;
     margin: 20px;
     color: rgba(70, 68, 68, 0.8);
   }
+
   button {
     background: var(--mid-green);
     color: var(--main-red);
@@ -193,6 +207,7 @@ call-to-action {
   font-family: "Play", sans-serif;
   text-align: center;
 }
+
 .footer img {
   width: 40px;
 }
@@ -236,19 +251,23 @@ call-to-action {
     background: rgb(166 159, 159);
     margin-top: 15px;
   }
+
   .menu-cards .menu-card p {
     font-size: small;
     margin: 3px;
   }
+
   .footer {
     text-align: left;
     padding: 5%;
   }
+
   .footer .row ul li {
     display: block;
     margin: 10px 0px;
     text-align: left;
   }
+
   .footer .row a i {
     margin: 0% 3%;
   }
