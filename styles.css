@@ -4,6 +4,9 @@
   --light-green: #c7e8ca;
   --dark-green: #5d9c59;
 }
+body {
+  width: 100%vh;
+}
 * {
   font-family: Helvetica, sans-serif serif;
 }
@@ -32,13 +35,13 @@ p {
   margin-left: -50px;
   font-size: 3em;
   font-family: "Sedan", serif;
-  font-weight: 400;
+  font-weight: 550;
   font-style: italic;
 }
 
 .contact {
   margin-left: auto;
-  margin-right: 0;
+  /* margin-right: 0; */
 }
 .logo > img {
   width: 60px;
@@ -100,14 +103,9 @@ call-to-action {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .dropdown ul li {
-  box-shadow: rgba(240, 240, 243, 0.25) 0px 13px 27px -5px,
-    rgba(117, 16, 16, 0.3) 0px 8px 16px -8px;
   border: 1px transparent;
   background: white;
   a {
@@ -115,6 +113,7 @@ call-to-action {
     padding: 10px;
     text-decoration: none;
     font-size: 0.7em;
+    color: black;
   }
 }
 
@@ -124,8 +123,9 @@ call-to-action {
 }
 
 .menu-item:hover {
-  box-shadow: rgba(238, 238, 241, 0.25) 0px 30px 60px -12px inset,
-    rgba(126, 27, 27, 0.3) 0px 18px 36px -18px inset;
+  box-shadow: rgba(66, 104, 66, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(23, 64, 10, 0.35) 0px -2px 6px 0px inset;
 }
 .menu-section {
   font-size: 30px;
@@ -135,20 +135,21 @@ call-to-action {
   align-items: center;
   h1 {
     /* font-stretch: extra-expanded; */
-    padding: 30px;
-    font-size: 40px;
+    padding: 20px;
+    font-size: 60px;
   }
 }
 .menu-cards {
-  margin: 50px auto;
+  margin: 10px auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 100%;
+  width: auto;
+  padding: 0 100px;
 }
 .menu-card {
   width: 20em;
-  height: 20em;
+  height: auto;
   padding: 70px 40px;
   border: 1px solid var(--dark-green);
   border-radius: 12px;
@@ -156,18 +157,21 @@ call-to-action {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 30px;
 
-  a {
+  /* a {
+
     color: var(--main-red);
     font-weight: bold;
     margin: 10px;
     text-shadow: none;
-  }
+    
+  } */
   img {
-    width: 80px;
-    height: 80px;
+    width: 6em;
+    height: 6em;
     border-radius: 50%;
-    background: rgb(166 159, 159);
+    background: var(--light-green);
     margin-top: 15px;
   }
   p {
@@ -176,25 +180,16 @@ call-to-action {
     margin: 20px;
     color: rgba(70, 68, 68, 0.8);
   }
-
-  @media screen and (max-width: 675px) {
-    .menu-card img {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      background: rgb(166 159, 159);
-      margin-top: 15px;
-    }
-    .menu-card {
-      font-size: small;
-      margin: 3px;
-    }
+  button {
+    background: var(--mid-green);
+    color: var(--main-red);
   }
 }
 
 .footer {
   background: var(--dark-green);
   padding: 30px 0px;
+  width: 100vw;
   font-family: "Play", sans-serif;
   text-align: center;
 }
@@ -206,7 +201,7 @@ call-to-action {
   width: 100%;
   margin: 1% 0%;
   padding: 0.6% 0%;
-  font-size: em;
+  font-size: 1em;
 }
 
 .footer .row a {
@@ -234,6 +229,17 @@ call-to-action {
 }
 
 @media (max-width: 720px) {
+  .menu-card img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: rgb(166 159, 159);
+    margin-top: 15px;
+  }
+  .menu-cards .menu-card p {
+    font-size: small;
+    margin: 3px;
+  }
   .footer {
     text-align: left;
     padding: 5%;
