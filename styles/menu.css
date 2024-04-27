@@ -5,11 +5,14 @@
     --dark-green: #5d9c59;
 }
 
+.top-img {
+    background: url(/images/);
+}
+
 .breakfast-cards {
     margin: 100px;
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-template-rows: auto auto;
+    grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     grid-gap: 5px;
 }
 
@@ -23,7 +26,7 @@
         align-items: center;
         text-align: center;
         border: 1px solid var(--dark-green);
-        border-radius: 20px;
+        border-radius: 50px;
         /* padding-bottom: 20px; */
 
         h3 {
@@ -49,6 +52,6 @@
     img {
         width: 100%;
         height: 20em;
-        border-radius: 20px 20px 0 0;
+        border-radius: 50px 50px 0 0;
     }
 }
