@@ -5,12 +5,36 @@
     --dark-green: #5d9c59;
 }
 
-.top-img {
-    background: url(/images/);
+section.hero {
+    background: url(/images/pexels-elletakesphotos-1660030.jpg);
+    background-size: cover;
+    align-items: end;
+
+
+
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+
+    .tag {
+        width: 5em;
+        height: 1.5em;
+        margin: 30px 20px 0;
+        border-radius: 50px;
+        border: none;
+        background: var(--light-green);
+        font-size: 1.6em;
+        color: var(--dark-green);
+        text-align: center;
+        padding: 10px 10px 0;
+    }
+
 }
 
 .breakfast-cards {
-    margin: 100px;
+    margin: 20px 100px;
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(4, 1fr);
     grid-gap: 5px;
@@ -30,9 +54,9 @@
         /* padding-bottom: 20px; */
 
         h3 {
-            color: var(--mid-green);
+            color: var(--dark-green);
             font-size: 30px;
-            font-weight: bold;
+
 
         }
 
