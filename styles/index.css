@@ -24,9 +24,10 @@ a {
 
 .nav-container {
   position: fixed;
+  top: 0;
   display: flex;
-  gap: 1rem;
-  flex-wrap: nowrap;
+  gap: 3rem;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
   list-style: none;
@@ -46,7 +47,7 @@ a {
 .name {
 
   margin-right: auto;
-  margin-left: -60px;
+  margin-left: -70px;
   padding: 2px;
   font-size: 3em;
   font-family: "Sedan", serif;
@@ -80,13 +81,14 @@ section.hero {
 }
 
 .title {
+  width: 60%;
   color: var(--dark-green);
   font-family: "Quicksand", sans-serif;
   font-optical-sizing: auto;
   font-weight: bold;
   font-style: normal;
   font-size: 80px;
-  margin: 70px;
+  margin: 1rem;
   /* -webkit-text-stroke: 1px black; */
 }
 
@@ -152,6 +154,7 @@ button {
   font-size: 30px;
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 
