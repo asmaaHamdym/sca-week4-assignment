@@ -8,10 +8,13 @@
 section.hero {
     background: url(../images/pexels-elletakesphotos-1660030.jpg);
     background-size: cover;
-    align-items: end;
 
 
 
+}
+
+#title {
+    text-align: end
 }
 
 .tags {
