@@ -23,13 +23,22 @@ a {
 
 
 .nav-container {
+  position: fixed;
   display: flex;
-  list-style: none;
+  gap: 1rem;
+  flex-wrap: nowrap;
   justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  background: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 5px 10px;
 }
 
 .nav-item {
-  margin: auto 50px;
+  margin: 0 50px;
   font-weight: 500;
   font-size: 2em;
 }
@@ -37,7 +46,8 @@ a {
 .name {
 
   margin-right: auto;
-  margin-left: -50px;
+  margin-left: -60px;
+  padding: 2px;
   font-size: 3em;
   font-family: "Sedan", serif;
   font-weight: 550;
